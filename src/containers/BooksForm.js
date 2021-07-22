@@ -4,16 +4,17 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { books } from '../actions';
 
+const categories = [
+  'Action',
+  'Biography',
+  'History',
+  'Horror',
+  'Kids',
+  'Learning',
+  'Sci-Fi',
+];
+
 function BooksForm({ createBook }) {
-  const categories = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
   const [formData, setFormData] = React.useState({ title: '', category: '' });
 
   const handleChange = (e) => {
