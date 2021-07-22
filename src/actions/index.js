@@ -1,3 +1,4 @@
 import * as books from './books';
+import * as filter from './filter';
 
-export default books;
+export { books, filter };

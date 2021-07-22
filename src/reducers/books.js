@@ -1,4 +1,4 @@
-import books from '../actions';
+import { books } from '../actions';
 
 import categories from '../categories';
 
