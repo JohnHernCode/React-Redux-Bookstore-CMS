@@ -9,12 +9,12 @@ function Book({
   },
 }) {
   return (
-    <div>
-      <h4>{ id }</h4>
-      <h4>{ category }</h4>
-      <h2>{ title }</h2>
-      <h5>Author</h5>
-    </div>
+    <tr>
+      <td>{ id }</td>
+      <td>{ category }</td>
+      <td>{ title }</td>
+      <td>Author</td>
+    </tr>
   );
 }
 

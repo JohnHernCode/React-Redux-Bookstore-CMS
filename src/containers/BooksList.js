@@ -7,24 +7,27 @@ function BooksList({
   books,
 }) {
   return (
-    <tr>
-      <td>Book ID</td>
-      <td>Title</td>
-      <td>Category</td>
+    <table>
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr><Book key={books.id} book={books} /></tr>
-        {/* { */}
-        {/*  books.length > 0 */}
-        {/*    ? books.map((book) => ( */}
-        {/*      <Book */}
-        {/*        key={book.id} */}
-        {/*        book={book} */}
-        {/*      /> */}
-        {/*    )) */}
-        {/*    : <h3 style={{ textAlign: 'center' }}>No books were found!</h3> */}
-        {/* } */}
+        {
+          books.length > 0
+            ? books.map((book) => (
+              <Book
+                key={book.id}
+                book={book}
+              />
+            ))
+            : <h3 style={{ textAlign: 'center' }}>No books were found!</h3>
+        }
       </tbody>
-    </tr>
+    </table>
   );
 }
 
