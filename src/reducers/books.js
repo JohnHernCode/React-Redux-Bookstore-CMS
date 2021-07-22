@@ -1,5 +1,4 @@
-import { books } from '../actions';
-
+import { books } from '../actions/index';
 import categories from '../categories';
 
 export const INITIAL_STATE = [
