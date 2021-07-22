@@ -4,8 +4,9 @@ import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
+import rootReducer from './reducers';
 
-const store = createStore();
+const store = createStore(rootReducer);
 
 const WrappedApp = () => (
   <Provider store={store}>
