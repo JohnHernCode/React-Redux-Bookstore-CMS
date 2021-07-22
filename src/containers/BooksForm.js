@@ -1,16 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
-const categories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
+import categories from '../categories';
 
 function BooksForm({ createBook }) {
   const [formData, setFormData] = React.useState({ title: '', category: '' });
