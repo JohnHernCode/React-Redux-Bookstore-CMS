@@ -11,9 +11,8 @@ function Book({
   return (
     <tr>
       <td>{ id }</td>
-      <td>{ category }</td>
       <td>{ title }</td>
-      <td>Author</td>
+      <td>{ category }</td>
     </tr>
   );
 }

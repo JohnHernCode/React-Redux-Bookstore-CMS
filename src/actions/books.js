@@ -3,7 +3,7 @@ export const ACTION_TYPES = {
   REMOVE_BOOK: 'REMOVE_BOOK',
 };
 
-let counter = 10;
+let counter = 4;
 
 export const createBook = (book) => {
   counter += 1;
