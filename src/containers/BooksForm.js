@@ -3,9 +3,17 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { books } from '../actions';
-import categories from '../categories';
 
 function BooksForm({ createBook }) {
+  const categories = [
+    'Action',
+    'Biography',
+    'History',
+    'Horror',
+    'Kids',
+    'Learning',
+    'Sci-Fi',
+  ];
   const [formData, setFormData] = React.useState({ title: '', category: '' });
 
   const handleChange = (e) => {

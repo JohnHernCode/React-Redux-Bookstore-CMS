@@ -8,6 +8,10 @@ function BooksList({
 }) {
   return (
     <section>
+      <div>
+        <td>Book ID</td>
+        <td>Book ID</td>
+      </div>
       {
           books.length > 0
             ? books.map((book) => (

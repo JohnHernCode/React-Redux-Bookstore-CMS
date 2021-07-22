@@ -5,10 +5,8 @@ import BooksForm from '../containers/BooksForm';
 function App() {
   return (
     <div>
-      <div>
-        <BooksList />
-        <BooksForm />
-      </div>
+      <BooksList />
+      <BooksForm />
     </div>
   );
 }
