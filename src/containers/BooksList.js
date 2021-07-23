@@ -2,16 +2,20 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { books } from '../actions';
+import { books, filter } from '../actions';
+import CategoryFilter from '../components/CategoryFilter';
 
 import Book from '../components/Book';
 
 function BooksList({
   books,
   removeBook,
+  filter,
+  changeFilter,
 }) {
   return (
     <table>
+      <CategoryFilter filter={filter} handleFilterChange={changeFilter} />
       <thead>
         <tr>
           <th>Book ID</th>
@@ -43,16 +47,25 @@ BooksList.propTypes = {
     category: PropTypes.string.isRequired,
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
 
-const getBooks = ({ books }) => books;
+const getFilteredBooks = ({ books, filter }) => {
+  if (filter === 'All') {
+    return books;
+  }
+  return books.filter(({ category }) => category === filter);
+};
 
 const mapStateToProps = (state) => ({
-  books: getBooks(state),
+  books: getFilteredBooks(state),
+  filter: state.filter,
 });
 const mapDispatchToProps = (dispatch) => (
   bindActionCreators({
     removeBook: books.removeBook,
+    changeFilter: filter.changeFilter,
   }, dispatch)
 );
 
