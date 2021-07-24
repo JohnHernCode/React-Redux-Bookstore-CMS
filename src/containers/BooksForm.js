@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { books } from '../actions';
 
 import style from './BooksForm.module.css';
-import util from '../base.module.css';
+import flex from '../base.module.css';
 
 const categories = [
   'Action',
@@ -34,17 +34,17 @@ function BooksForm({ createBook }) {
   };
 
   return (
-    <section className={classnames(util.w100, util.section)}>
-      <form onSubmit={handleSubmit} className={classnames(util.w100, style.form)}>
+    <section className={classnames(flex.w100, flex.section)}>
+      <form onSubmit={handleSubmit} className={classnames(flex.w100, style.form)}>
         <h2>Add new book</h2>
-        <div className={classnames(style.formInner, util.flex)}>
+        <div className={classnames(style.formInner, flex.flex)}>
           <div className={style.inputGroup}>
             <input
               id="title"
               type="text"
               name="title"
               placeholder="Title"
-              className={util.input}
+              className={flex.input}
               onChange={handleChange}
               value={formData.title}
               required
@@ -54,7 +54,7 @@ function BooksForm({ createBook }) {
             <select
               id="category"
               name="category"
-              className={util.select}
+              className={flex.select}
               onChange={handleChange}
               value={formData.category}
               required
@@ -63,7 +63,7 @@ function BooksForm({ createBook }) {
               { categories.map((c) => <option key={c} value={c}>{c}</option>) }
             </select>
           </div>
-          <button className={util.button} type="submit">Save</button>
+          <button className={flex.button} type="submit">Save</button>
         </div>
       </form>
     </section>

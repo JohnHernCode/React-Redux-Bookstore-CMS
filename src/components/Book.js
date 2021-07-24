@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import style from './Book.module.css';
-import util from '../utils.module.css';
+import flex from '../base.module.css';
 
 function Book(props) {
   const { book, handleRemoveBook } = props;
@@ -19,16 +19,16 @@ function Book(props) {
           <span>Edit</span>
         </div>
       </div>
-      <div className={classnames(util.flex, util.alignCenter)}>
-        <div className={classnames(style.progress, util.flex)}>
+      <div className={classnames(flex.flex, flex.alignCenter)}>
+        <div className={classnames(style.progress, flex.flex)}>
           <div className={style.progressCircle} />
-          <div className={classnames(util.flex, util.column)}>
+          <div className={classnames(flex.flex, flex.column)}>
             <div className={style.percentage}>100%</div>
             <div className={style.status}>Completed</div>
           </div>
         </div>
         <div
-          className={classnames(util.flex, util.column, util.justifyBetween, util.h100)}
+          className={classnames(flex.flex, flex.column, flex.justifyBetween, flex.h100)}
         >
           <div>
             <div className={style.chapterLabel}>Current Chapter</div>
@@ -40,7 +40,7 @@ function Book(props) {
           <button
             onClick={() => handleRemoveBook([book.id], [book.title], [book.category])}
             type="button"
-            className={util.button}
+            className={flex.button}
           >
             Remove
           </button>

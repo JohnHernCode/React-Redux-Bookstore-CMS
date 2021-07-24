@@ -1,10 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import style from './nav.module.css';
+import style from './Header.module.css';
 import utils from '../base.module.css';
 
-function head() {
+function header() {
   return (
     <header className={style.navContainer}>
       <div className={classnames(style.nav, utils.container)}>
@@ -37,4 +37,4 @@ function head() {
   );
 }
 
-export default head;
+export default header;

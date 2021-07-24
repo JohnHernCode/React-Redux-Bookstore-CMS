@@ -7,7 +7,7 @@ import { books, filter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 import Book from '../components/Book';
-import util from '../base.module.css';
+import flex from '../base.module.css';
 
 function BooksList({
   books,
@@ -16,7 +16,7 @@ function BooksList({
   changeFilter,
 }) {
   return (
-    <section className={classnames(util.w100, util.section)}>
+    <section className={classnames(flex.w100, flex.section)}>
       <CategoryFilter filter={filter} handleFilterChange={changeFilter} />
       {
           books.length > 0
