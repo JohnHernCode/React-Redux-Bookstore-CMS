@@ -1,8 +1,12 @@
 import React from 'react';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { books } from '../actions';
+
+import style from './BooksForm.module.css';
+import flex from '../base.module.css';
 
 const categories = [
   'Action',
@@ -30,25 +34,27 @@ function BooksForm({ createBook }) {
   };
 
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
+    <section className={classnames(flex.w100, flex.section)}>
+      <form onSubmit={handleSubmit} className={classnames(flex.w100, style.form)}>
         <h2>Add new book</h2>
-        <div>
-          <div>
+        <div className={classnames(style.formInner, flex.flex)}>
+          <div className={style.inputGroup}>
             <input
               id="title"
               type="text"
               name="title"
               placeholder="Title"
+              className={flex.input}
               onChange={handleChange}
               value={formData.title}
               required
             />
           </div>
-          <div>
+          <div className={style.inputGroup}>
             <select
               id="category"
               name="category"
+              className={flex.select}
               onChange={handleChange}
               value={formData.category}
               required
@@ -57,7 +63,7 @@ function BooksForm({ createBook }) {
               { categories.map((c) => <option key={c} value={c}>{c}</option>) }
             </select>
           </div>
-          <button type="submit">Save</button>
+          <button className={flex.button} type="submit">Save</button>
         </div>
       </form>
     </section>
