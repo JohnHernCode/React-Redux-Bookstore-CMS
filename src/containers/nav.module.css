@@ -1,0 +1,57 @@
+.nav {
+  height: 95px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Monsterrat, sans-serif;
+}
+
+.navContainer {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.nav > div {
+  display: flex;
+  align-items: center;
+}
+
+.nav h1 {
+  color: #0290ff;
+  margin-right: 46px;
+}
+
+.nav .link {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #888;
+}
+
+.nav .link + .link {
+  margin-left: 40px;
+}
+
+.nav .link.active {
+  color: #121212;
+}
+
+.nav .userMenu {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  cursor: pointer;
+}
+
+.nav .userMenu svg {
+  width: 16px;
+  height: 16px;
+}
