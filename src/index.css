@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding-left: 200px;
+  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -12,6 +16,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
+  background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,4 +29,12 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
