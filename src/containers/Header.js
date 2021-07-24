@@ -1,13 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import style from './nav.module.css';
-import utils from '../base.module.css';
+import style from './Header.module.css';
+import flex from '../base.module.css';
 
-function head() {
+function header() {
   return (
     <header className={style.navContainer}>
-      <div className={classnames(style.nav, utils.container)}>
+      <div className={classnames(style.nav, flex.container)}>
         <div>
           <h1>Bookstore CMS</h1>
           <div className={classnames(style.link, style.active)}>Books</div>
@@ -37,4 +37,4 @@ function head() {
   );
 }
 
-export default head;
+export default header;
