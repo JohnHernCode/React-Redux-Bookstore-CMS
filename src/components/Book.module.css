@@ -1,0 +1,87 @@
+.book {
+  background-color: #fff;
+  padding: 26px;
+  font-family: 'Roboto Slab', sans-serif;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book + .book {
+  margin-top: 15px;
+}
+
+.book h4 {
+  color: #888;
+  font-size: 14px;
+  font-family: Monsterrat, sans-serif;
+}
+
+.book h2 {
+  font-size: 22px;
+  color: #121212;
+  margin-top: 6px;
+}
+
+.book .links {
+  margin-top: 16px;
+}
+
+.book h5,
+.book .links > span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.book .links > span {
+  padding: 0 16px 0 0;
+}
+
+.book .links > span + span {
+  padding: 0 16px;
+  border-left: solid 1px #e8e8e8;
+}
+
+.book button {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.book .chapterLabel {
+  color: #888;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.book .chapter {
+  color: #121212;
+  margin-top: 8px;
+}
+
+.book .progress {
+  padding-right: 60px;
+  margin-right: 60px;
+  border-right: solid 1px #e8e8e8;
+  font-family: Montserrat, sans-serif;
+}
+
+.book .percentage {
+  font-size: 32px;
+}
+
+.book .status {
+  font-size: 14px;
+  color: #888;
+}
+
+.book .progressCircle {
+  border-style: solid;
+  border-width: 5px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border-color: #307bbe;
+  margin-right: 22px;
+}
