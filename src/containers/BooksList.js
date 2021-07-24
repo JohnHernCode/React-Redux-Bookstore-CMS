@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -6,6 +7,7 @@ import { books, filter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 import Book from '../components/Book';
+import util from '../base.module.css';
 
 function BooksList({
   books,
@@ -14,17 +16,9 @@ function BooksList({
   changeFilter,
 }) {
   return (
-    <table>
+    <section className={classnames(util.w100, util.section)}>
       <CategoryFilter filter={filter} handleFilterChange={changeFilter} />
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
+      {
           books.length > 0
             ? books.map((book) => (
               <Book
@@ -35,8 +29,7 @@ function BooksList({
             ))
             : <h3 style={{ textAlign: 'center' }}>No books were found!</h3>
         }
-      </tbody>
-    </table>
+    </section>
   );
 }
 
