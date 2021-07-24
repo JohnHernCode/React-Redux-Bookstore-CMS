@@ -13,9 +13,9 @@
 
 ## About The Project
 
-This is the Microverse React Redux Bookstore CMS Project. The project is designed to simulate a
+This is the Microverse React Redux Bookstore CMS Project. The design of the project to simulate a
 real world Bookstore. The project uses Node, React, React-DOM, Redux, CSS, and ES6. 
-Deployment is done via Heroku.
+Deployment available via Heroku.
 
 ## Screen Shot
 
