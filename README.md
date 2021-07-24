@@ -64,12 +64,14 @@ To get a local copy up and running follow these simple example steps.
 3. Run ```npm Start``` to run the development server.
 4. It should automatically open in your default browser.
 
-### How to use the site
-TBD
+### How to add a book
+Insert the book's title in the title input section.
+Select a category.
+Submit the book.
 
+### How to remove a book
+Click the "remove" button next to a book.
 
-### How to run the tests for the site
-TBD
 
 <!-- CONTACT -->
 
@@ -101,6 +103,6 @@ Give a :star: if you like this project!
 
 ## Credits
 
-## 📝 License
+## License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
