@@ -7,16 +7,15 @@ import flex from '../base.module.css';
 
 function App() {
   return (
-      <div>
-        <Header />
-        <div className={classnames(flex.flex, flex.column, flex.alignCenter)}>
-          <div className={flex.container}>
-            <BooksList />
-            <BooksForm />
-          </div>
+    <div>
+      <Header />
+      <div className={classnames(flex.flex, flex.column, flex.alignCenter)}>
+        <div className={flex.container}>
+          <BooksList />
+          <BooksForm />
         </div>
       </div>
-  );
+    </div>
   );
 }
 
