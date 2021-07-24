@@ -1,0 +1,35 @@
+.form {
+  margin: 26px 0;
+  padding: 26px 0;
+  border-top: solid 1px #e8e8e8;
+  font-family: Montserrat, sans-serif;
+}
+
+.form h2 {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 20px;
+}
+
+.form .formInner {
+  margin-top: 18px;
+}
+
+.form button {
+  height: 42px;
+  padding: 0 36px;
+  font-weight: bold;
+  margin-left: 34px;
+}
+
+.inputGroup {
+  flex: 1;
+}
+
+.inputGroup > *:not(button) {
+  width: 100%;
+}
+
+.inputGroup + .inputGroup {
+  margin-left: 34px;
+}
