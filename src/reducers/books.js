@@ -2,10 +2,10 @@ import { books } from '../actions/index';
 import categories from '../categories';
 
 export const INITIAL_STATE = [
-  { id: 1, title: 'Book 1', category: categories[0] },
-  { id: 2, title: 'Book 2', category: categories[2] },
-  { id: 3, title: 'Book 3', category: categories[1] },
-  { id: 4, title: 'Book 4', category: categories[4] },
+  { id: 1, title: 'The Cellist', category: categories[0] },
+  { id: 2, title: 'The Paper Palace', category: categories[2] },
+  { id: 3, title: 'Malibu Rising', category: categories[1] },
+  { id: 4, title: 'It\'s Better This Way', category: categories[4] },
 ];
 
 const booksReducer = (state = INITIAL_STATE, action) => {
